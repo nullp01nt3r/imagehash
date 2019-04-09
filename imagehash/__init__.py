@@ -59,7 +59,7 @@ class ImageHash(object):
 		self.hash = binary_array
 
 	def __str__(self):
-		return _binary_array_to_hex(self.hash.flatten())
+		return ''.join(str(b) for b in 1 * self.hash.flatten())
 
 	def __repr__(self):
 		return repr(self.hash)
